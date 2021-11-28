@@ -2,6 +2,9 @@ import { Router } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
 import Routes from './routes';
 
+import './styles/global.scss'
+import 'bootstrap/scss/bootstrap.scss';
+
 function App() {
   const browserHistory = createBrowserHistory();
  

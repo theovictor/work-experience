@@ -15,8 +15,9 @@
   --green: #81E6D9;
   --teal: #20c997;
   --cyan: #61dafb;
-  --white: #fff;
+  --white: #FFFFFF;
   --gray: #6c757d;
+  --gray-300: #CBD5E0;
   --gray-dark: #343a40;
   --primary: #cb0c9f;
   --secondary: #8392AB;
@@ -31,9 +32,7 @@
   --gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
 }
 
-button {
-  cursor: pointer;
-}
+button { cursor: pointer; }
 
 a {
   color: inherit;
@@ -55,3 +54,39 @@ a {
 .bg-gradient-light { background-image: linear-gradient(310deg, #CED4DA 0%, #EBEFF4 100%); }
 
 .bg-gradient-dark { background-image: linear-gradient(310deg, #141727 0%, #3A416F 100%); }
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  margin-top: 0 !important;
+  margin-bottom: 0.5rem !important;
+  font-weight: 400 !important;
+  line-height: 1.2 !important;
+  color: #344767 !important;
+}
+
+h1, .h1 {
+  font-size: calc(1.425rem + 2.1vw) !important;
+}
+@media (min-width: 1200px) {
+  h1, .h1 {
+    font-size: 3rem !important;
+  }
+}
+
+h1, .h1, .h1 {
+  font-size: 3rem !important;
+  line-height: 1.25 !important;
+  letter-spacing: -0.025rem !important;
+}
+@media (max-width: 575.98px) {
+  h1, .h1, .h1 {
+    font-size: calc(1.425rem + 2.1vw) !important;
+  }
+}
+
+h1, .h1, .h1, h2, .h2, .h2, h3, .h3, .h3 {
+  font-weight: 700 !important;
+}
+
+h1, .h1, .h1, h2, .h2, .h2, h3, .h3, .h3, h4, .h4, .h4 {
+  letter-spacing: -0.05rem !important;
+}
