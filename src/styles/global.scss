@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --blue: #63B3ED;
+  --indigo: #596CFF;
+  --purple: #6f42c1;
+  --pink: #d63384;
+  --red: #F56565;
+  --orange: #fd7e14;
+  --yellow: #FBD38D;
+  --green: #81E6D9;
+  --teal: #20c997;
+  --cyan: #61dafb;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #cb0c9f;
+  --secondary: #8392AB;
+  --success: #82d616;
+  --info: #17c1e8;
+  --warning: #fbcf33;
+  --danger: #ea0606;
+  --light: #e9ecef;
+  --dark: #344767;
+  --font-sans-serif: Open Sans;
+  --font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.bg-gradient-primary { background-image: linear-gradient(310deg, #7928CA 0%, #FF0080 100%); }
+
+.bg-gradient-secondary { background-image: linear-gradient(310deg, #627594 0%, #A8B8D8 100%); }
+
+.bg-gradient-success { background-image: linear-gradient(310deg, #17ad37 0%, #98ec2d 100%); }
+
+.bg-gradient-info { background-image: linear-gradient(310deg, #2152ff 0%, #21d4fd 100%); }
+
+.bg-gradient-warning { background-image: linear-gradient(310deg, #f53939 0%, #fbcf33 100%); }
+
+.bg-gradient-danger { background-image: linear-gradient(310deg, #ea0606 0%, #ff667c 100%); }
+
+.bg-gradient-light { background-image: linear-gradient(310deg, #CED4DA 0%, #EBEFF4 100%); }
+
+.bg-gradient-dark { background-image: linear-gradient(310deg, #141727 0%, #3A416F 100%); }
