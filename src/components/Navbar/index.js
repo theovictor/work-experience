@@ -9,7 +9,7 @@ export function MainNavbar() {
       <div className={styles.navContent}>
         <Navbar collapseOnSelect expand="lg">
           <Container fluid>
-            <Navbar.Brand>Work Experience</Navbar.Brand>
+            <Navbar.Brand className={styles.navBrand}>Work Experience</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="m-auto">

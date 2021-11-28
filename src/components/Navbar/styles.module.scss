@@ -16,6 +16,19 @@
     border-radius: 30px;
     z-index: 1030;
     
+    .navBrand {
+      margin-left: 2rem;
+      margin-right: -2rem;
+      font-weight: 700!important;
+      color: #cb0c9f!important;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      position: relative;
+      z-index: 1;
+      background-image: linear-gradient(310deg, #7928CA, #FF0080);
+    }
+
     a {
       display: inline-block;
       position: relative;
