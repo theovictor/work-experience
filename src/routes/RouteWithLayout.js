@@ -7,7 +7,7 @@ export const RouteWithLayout = props => {
     <Route
       {...rest}
       render={matchProps => (
-        <Layout>
+        <Layout >
           <Component {...matchProps} />
         </Layout>
       )}

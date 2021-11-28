@@ -1,13 +1,13 @@
-import MainBody from './Body';
-import MainHeader from './Header';
-import MainFooter from './Footer';
+import Body from './Body';
+import Header from './Header';
+import Footer from './Footer';
 
 export default function Main({children}) {
   return (
     <>
-      <MainHeader />
-      <MainBody />
-      <MainFooter/>
+      <Header />
+      <Body children={children}/>
+      <Footer/>
     </>
   )
 }
