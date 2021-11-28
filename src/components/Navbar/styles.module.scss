@@ -35,4 +35,19 @@ nav {
       background-color: var(--yellow);
     }
   }
+
+  .btn {
+    font-weight: 700;
+    color: #67748e;
+    padding: 0.45rem 0.90rem;
+    border: none;
+    border-radius: 0.5rem;
+    transition: all 0.15s ease-in;
+    &:hover {
+      transform: scale(1.03);
+      filter: brightness(0.8);
+      color: #67748e;
+      box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.09), 0 2px 3px -1px rgba(0, 0, 0, 0.07);
+    }
+  }
 }
