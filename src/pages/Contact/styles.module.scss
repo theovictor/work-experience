@@ -1,0 +1,65 @@
+.headerContent {
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-position: 50%;
+  min-height: 85vh!important;
+
+  .headerImage {
+    border-top-left-radius: 0!important;
+    border-top-right-radius: 0!important;
+    border-bottom-right-radius: 0!important;
+    border-radius: 10rem;
+    z-index: 0;
+  }
+  .Container {
+    position: absolute;
+    z-index: 1;
+
+    .Row {
+      margin-top: 3.5rem;
+      margin-left: 2.5rem;
+
+      .Card {
+        box-shadow: inset 0px 0px 2px #fefefed1;
+        -webkit-backdrop-filter: saturate(200%) blur(30px);
+        backdrop-filter: saturate(200%) blur(30px);
+        background-color: rgba(255, 255, 255, 0.8) !important;
+        border-radius: 25px;
+        border: none;
+
+        .Title {
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          position: relative;
+          z-index: 1;
+          background-image: linear-gradient(310deg, #7928CA, #FF0080);
+          color: #cb0c9f !important;
+          letter-spacing: -0.05rem;
+          font-size: 1.875rem;
+          font-weight: 700!important;
+          line-height: 1.375;
+        }
+
+        .Text {
+          line-height: 1.625;
+          font-weight: 400;
+          font-size: 1rem;
+          margin-top: 0;
+          color: #67748e;
+        }
+      }
+
+    }
+    @media (max-width: 425px) {
+      .Row {
+        margin-top: 9.5rem;
+        margin-left: 0;
+      }
+    }
+  }
+}
