@@ -13,9 +13,9 @@ export default function ParceriosHeader() {
           <Container className={styles['header-container']}>
             <Row className="justify-content-center">
               <Col className="text-center mx-auto my-auto" lg="8">
-                <h1 className="text-white">Work Experience</h1>
+                <h1 className="text-white">Pagina Parceiros</h1>
                 <p className={`lead mb-4 text-white ${styles['opacity-8']}`}>
-                  Especialista em recrutamento de Recursos Humanos
+                  ......
                 </p>
                 <h6 className="text-white mb-2 mt-5">Encontre-nos em</h6>
                 <div className="d-flex justify-content-center">
