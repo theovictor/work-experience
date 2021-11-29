@@ -1,8 +1,11 @@
+import { useHistory } from 'react-router';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
 import styles from './styles.module.scss';
 
 export default function Header() {
+  const history = useHistory();
+
   return (
     <>
       <header className="bg-gradient-dark">
@@ -15,7 +18,7 @@ export default function Header() {
                 <p className={`lead mb-4 text-white ${styles['opacity-8']}`}>
                   Especialista em recrutamento de Recursos Humanos
                 </p>
-                <Button className={`${styles.btn} bg-white text-dark`}>Criar Conta</Button>
+                <Button className={`${styles.btn} bg-white text-dark`} onClick={() => {history.push('/register')}}>Criar Conta</Button>
                 <h6 className="text-white mb-2 mt-5">Encontre-nos em</h6>
                 <div className="d-flex justify-content-center">
                   <a href="home"><i className="text-lg text-white me-4"><FaFacebook/></i></a>

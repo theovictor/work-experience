@@ -10,7 +10,7 @@ export function MainNavbar() {
   return (
     <>
       <div className={styles.navContent}>
-        <Navbar collapseOnSelect expand="lg">
+        <Navbar collapseOnSelect expand="lg" className="shadow">
           <Container fluid>
             <Navbar.Brand className={styles.navBrand}>Work Experience</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -21,7 +21,7 @@ export function MainNavbar() {
                 <NavLink to="/contact" className={isActive => styles.active + (!isActive ? "unselected" : '')}>Contato</NavLink>
               </Nav>
               <Nav>
-                <Button className={`${styles.btn} bg-white text-dark`} onClick={() => {history.push('/login')}}>Entrar</Button>
+                <Button className={`bg-white text-dark`} onClick={() => {history.push('/login')}}>Entrar</Button>
               </Nav>
             </Navbar.Collapse>
           </Container>
