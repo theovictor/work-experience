@@ -12,7 +12,7 @@ export default function HomeHeader() {
     <>
       <header className="bg-gradient-dark">
         <div className={`align-items-center d-flex p-0 ${styles.headerContent}`} style={{backgroundImage: `url(${officeimg})`}}>
-          <span className={`bg-gradient-info ${styles.mask} ${styles['opacity-8']}`}/>
+          <span className={`bg-gradient-dark ${styles.mask} ${styles['opacity-8']}`}/>
           <Container className={styles['header-container']}>
             <Row className="justify-content-center">
               <Col className="text-center mx-auto my-auto" lg="8">
