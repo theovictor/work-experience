@@ -10,11 +10,19 @@
 }
 
 .Card {
-  border-radius: 20px;
+  border-radius: 20px!important;
   border: none;
 
   img {
     border-radius: 15px;
     border: none;
   }
+}
+
+.Wave-Down {
+  margin-top: -1rem !important;
+}
+
+.Section {
+  padding-top: 8rem !important;
 }
