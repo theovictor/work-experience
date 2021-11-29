@@ -17,7 +17,7 @@ export default function Login() {
   
   const login = (e) => {
     e.preventDefault();
-    console.log(formik.values)
+    // console.log(formik.values)
   }
 
   return (
@@ -37,7 +37,7 @@ export default function Login() {
                       <Row>
                           <Form.Group className="mb-3 text-start" controlId="formBasicEmail">
                             <Form.Label>Email</Form.Label>
-                            <Form.Control type="text" {...formik.getFieldProps('email')} required/>
+                            <Form.Control type="email" {...formik.getFieldProps('email')} required/>
                           </Form.Group>
                           <Form.Group className="mb-3 text-start" controlId="formBasicEmail">
                             <Form.Label>Senha</Form.Label>
