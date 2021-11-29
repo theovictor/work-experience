@@ -1,5 +1,4 @@
 import { useFormik } from 'formik';
-import { Link } from 'react-router-dom';
 import { Card, Col, Container, Form, Row, Button } from 'react-bootstrap';
 
 import styles from './styles.module.scss';
