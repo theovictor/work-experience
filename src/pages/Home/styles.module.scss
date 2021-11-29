@@ -1,0 +1,20 @@
+.Icon {
+  width: 48px;
+  height: 48px;
+  background-position: center;
+  border-radius: 0.75rem;
+  fill: currentColor;
+  stroke: none;
+  display: inline-block;
+  color: #111111;
+}
+
+.Card {
+  border-radius: 20px;
+  border: none;
+
+  img {
+    border-radius: 15px;
+    border: none;
+  }
+}
