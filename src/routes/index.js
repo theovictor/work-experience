@@ -17,7 +17,7 @@ export default function Index() {
     if (location.pathname === '/') {
       history.push('/home')
     }
-  }, [location])
+  }, [history, location])
 
   return (
     <Switch>
