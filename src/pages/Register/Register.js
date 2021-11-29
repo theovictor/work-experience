@@ -59,10 +59,6 @@ export default function Register() {
                       </div>
                     </Form>
                   </Card.Body>
-                  <Card.Footer className="bg-transparent d-flex justify-content-center border-0">
-                    <p>Não tem conta ?</p>
-                    <Link to="/cadastro">Cadastre-se</Link>
-                  </Card.Footer>
                 </Card>
               </Col>
               <Col sm="6" className="d-lg-flex d-none h-100 my-auto pe-0 position-absolute top-0 end-0 text-center justify-content-center flex-column">

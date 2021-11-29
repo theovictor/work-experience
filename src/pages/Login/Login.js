@@ -51,7 +51,7 @@ export default function Login() {
                   </Card.Body>
                   <Card.Footer className="bg-transparent d-flex justify-content-center border-0">
                     <p>Não tem conta ?</p>
-                    <Link to="/cadastro">Cadastre-se</Link>
+                    <Link to="/register">Cadastre-se</Link>
                   </Card.Footer>
                 </Card>
               </Col>
