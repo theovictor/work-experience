@@ -28,8 +28,8 @@ export default function Home() {
                     <div className={`text-center ${styles.Icon}`}>
                       <img src={spaceship} alt="spaceship"/>
                     </div>
-                    <h5>Fully integrated</h5>
-                    <p>We get insulted by others, lose trust for those We get back freezes</p>
+                    <h5>Plenamente Integrado</h5>
+                    <p>Plataforma conectada as mais diversas redes empresariais</p>
                   </div>
                 </Col>
                 <Col md="6">
@@ -37,8 +37,8 @@ export default function Home() {
                     <div className={`text-center ${styles.Icon}`}>
                       <img src={creditCard} alt="spaceship"/>
                     </div>
-                    <h5>Payments functionality</h5>
-                    <p>We get insulted by others, lose trust for those We get back freezes</p>
+                    <h5>Bolsa Dinâmica</h5>
+                    <p>Bonificação dinâmica das bolsas durante sua evolução</p>
                   </div>
                 </Col>
               </Row>
@@ -48,8 +48,8 @@ export default function Home() {
                     <div className={`text-center ${styles.Icon}`}>
                       <img src={box3D} alt="spaceship"/>
                     </div>
-                    <h5>Prebuilt components</h5>
-                    <p>We get insulted by others, lose trust for those We get back freezes</p>
+                    <h5>Conhecimento Modular</h5>
+                    <p>Integração dos conhecimentos acadêmicos e profissionais</p>
                   </div>
                 </Col>
                 <Col md="6">
@@ -57,8 +57,8 @@ export default function Home() {
                     <div className={`text-center ${styles.Icon}`}>
                       <img src={customerSuport} alt="spaceship"/>
                     </div>
-                    <h5>Improved platform</h5>
-                    <p>We get insulted by others, lose trust for those We get back freezes</p>
+                    <h5>Fórum Especializado</h5>
+                    <p>Acesso ao fórum composto pelos maiores especialistas de cada área</p>
                   </div>
                 </Col>
               </Row>
@@ -71,8 +71,8 @@ export default function Home() {
                   </div>
                 </Card.Header>
                 <Card.Body>
-                  <h5>Get insights on Search</h5>
-                  <p>Website visitors today demand a frictionless user expericence — especially when using search. Because of the hight standards.</p>
+                  <h5>Trabalhe com os melhores</h5>
+                  <p>Faremos com que a sua experiência seja efetuada com os melhores especialistas de cada área, de modo a forma uma base solida para seu futuro.</p>
                 </Card.Body>
               </Card>
             </Col>
@@ -86,8 +86,8 @@ export default function Home() {
         <Container>
           <Row>
             <Col md="8" className="text-start mb-5 mt-5">
-              <h3 className="text-white z-index-1 ">The Executive Team</h3>
-              <p className="text-white mb-0">There’s nothing I really wanted to do in life that I wasn’t able to get good at. That’s my skill.</p>
+              <h3 className="text-white z-index-1 ">A Equipe Executiva</h3>
+              <p className="text-white mb-0">Conheça um pouco sobre as mentes por trás do nosso brilhante projeto</p>
             </Col>
           </Row>
           <Row>
@@ -176,18 +176,18 @@ export default function Home() {
           <div className="row justify-content-center text-center">
             <div className="col-md-3">
               <h1 className="text-gradient text-info" id="state1" countTo="5234">5234</h1>
-              <h5>Projects</h5>
-              <p>Of “high-performing” level are led by a certified project manager</p>
+              <h5>Contratos</h5>
+              <p>Clientes que foram efetivados no mercado de trabalho</p>
             </div>
             <div className="col-md-3">
               <h1 className="text-gradient text-info"><span id="state2" countTo="3400">3400</span>+</h1>
-              <h5>Hours</h5>
-              <p>That meets quality standards required by our users</p>
+              <h5>Cursos</h5>
+              <p>São cursos e novos lançamentos toda semana</p>
             </div>
             <div className="col-md-3">
               <h1 className="text-gradient text-info"><span id="state3" countTo="24">24</span>/7</h1>
-              <h5>Support</h5>
-              <p>Actively engage team members that finishes on time</p>
+              <h5>Suporte</h5>
+              <p>Nosso time está disposição á qualquer hora</p>
             </div>
           </div>
         </Container>
@@ -196,10 +196,10 @@ export default function Home() {
         <Container>
           <Row>
             <Col md="6" className="m-auto">
-              <h4>Be the first to see the news</h4>
+              <h4>Seja o primeiro a ver as novidades</h4>
               <p className="mb-4">
-                Your company may not be in the software business,
-                but eventually, a software company will be in your business.
+                Você pode não está no mercado,
+                Porém, com nossa ajuda e seu esforço alcançaremos as alturas.
               </p>
               <Row>
                 <div className="col-8">
