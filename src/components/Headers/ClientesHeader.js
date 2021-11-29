@@ -3,7 +3,7 @@ import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
 import styles from './styles.module.scss';
 import curved11 from '../../assets/img/curved.jpg'
 
-export default function AboutHeader() {
+export default function ClientesHeader() {
 
   return (
     <>
