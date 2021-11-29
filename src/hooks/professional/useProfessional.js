@@ -11,12 +11,11 @@ export function useProfessional() {
     axios.get(`${professional}/total`, {
     })
     .then((res) => {
-      dispatch(professinalActions.add_index_advogados(res.data));
+      dispatch(professinalActions.index_professinal(res.data));
     });
   }
 
   const postProfessinal = (values) => {
-    console.log(values);
     axios.post(professional, values, {
     })
     .then((res) => {

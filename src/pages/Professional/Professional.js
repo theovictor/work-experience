@@ -2,9 +2,12 @@ import { useFormik } from 'formik';
 import { useProfessional } from '../../hooks/professional/useProfessional';
 import { Card, Col, Container, Form, Row, Button } from 'react-bootstrap';
 import ProfessinalHeader from '../../components/Headers/ProfessinalHeader';
+import { useEffect } from 'react';
+import { useSelector } from 'react-redux';
 
 export default function Professional() {
   const profissional = useProfessional();
+  const rd_professional = useSelector((state) => state.professinalReducer);
 
   const formik = useFormik({
     initialValues: {
@@ -15,10 +18,29 @@ export default function Professional() {
     },
   });
 
+  const limpar = () => {
+    formik.values.name = '';
+    formik.values.email = '';
+    formik.values.birth_date = '';
+    formik.values.occupation_area = '';
+  }
+
   const addProfessinal = (e) => {
     e.preventDefault();
-    profissional.postProfessinal(formik.values);
+    profissional.postProfessinal({
+      name: formik.values.name,
+      email: formik.values.email,
+      birth_date: new Date(formik.values.birth_date),
+      occupation_area: formik.values.occupation_area,
+    });
+    limpar();
   }
+
+  useEffect(() => {
+    if (!rd_professional.index) {
+      profissional.getTotalProfessinal();
+    }
+  }, [rd_professional.index])
 
   return (
     <>
@@ -30,7 +52,7 @@ export default function Professional() {
               <Col md="6">
                 <h4>Profissionais cadastrados</h4>
                 <p>Atualmente a Work Experience contem um total de profissionais cadastrados de...</p>
-                <h1 className="text-gradient text-info">0</h1>
+                <h1 className="text-gradient text-info">{rd_professional?.index? rd_professional.index?.total : '0' }</h1>
               </Col>
             </Row>
             <Row className="mt-4 justify-content-center">
