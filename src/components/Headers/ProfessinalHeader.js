@@ -1,27 +1,26 @@
 import { Container, Row, Col } from 'react-bootstrap';
-import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
 import styles from './styles.module.scss';
-import curved5 from '../../assets/img/curved5-small.jpg'
+import curved11 from '../../assets/img/curved.jpg'
 
-export default function ClientesHeader() {
+export default function ProfessinalHeader() {
 
   return (
     <>
       <header className="bg-gradient-dark">
-        <div className={`align-items-center d-flex p-0 ${styles.headerContent}`} style={{backgroundImage: `url(${curved5})`}}>
-          <span className={`bg-gradient-dark ${styles.mask} ${styles['opacity-8']}`}/>
+        <div className={`align-items-center d-flex p-0 ${styles.headerContent}`} style={{backgroundImage: `url(${curved11})`}}>
+          {/* <span className={`bg-gradient-info ${styles.mask} ${styles['opacity-8']}`}/> */}
           <Container className={styles['header-container']}>
             <Row className="justify-content-center">
               <Col className="text-center mx-auto my-auto" lg="8">
-                <h1 className="text-white">Pagina Clientes</h1>
+                <h1 className="text-white">Work Experience</h1>
                 <p className={`lead mb-4 text-white ${styles['opacity-8']}`}>
-                  .....
+                  Profissionais vinculados a nossa empressa.
                 </p>
-                <h6 className="text-white mb-2 mt-5">Encontre-nos em</h6>
+                <h6 className="text-white mb-2 mt-5">Em busca da sua primeira oportunidade de emprego?</h6>
                 <div className="d-flex justify-content-center">
-                  <a href="home"><i className="text-lg text-white me-4"><FaFacebook/></i></a>
-                  <a href="home"><i className="text-lg text-white me-4"><FaInstagram/></i></a>
-                  <a href="home"><i className="text-lg text-white me-4"><FaTwitter/></i></a>
+                  <p className={`lead mb-4 text-white ${styles['opacity-8']}`}>
+                    Faça seu pre-cadastro!
+                  </p>
                 </div>
               </Col>
             </Row>

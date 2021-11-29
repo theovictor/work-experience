@@ -3,11 +3,11 @@ import { Switch, useHistory, useLocation } from 'react-router-dom';
 import { RouteWithLayout } from './RouteWithLayout';
 import MainLayout from '../layout/Main';
 import HomePage from '../pages/Home/Home';
-import ParceiroPage from '../pages/Parceiro/Parceiro';
+import ProfessionalPage from '../pages/Professional/Professional';
 import ContactPage from '../pages/Contact/Contact';
 import LoginPage from '../pages/Login/Login';
 import RegisterPage from '../pages/Register/Register';
-import ClientPage from '../pages/Clientes/Clientes';
+import CompaniePage from '../pages/Companie/Companie';
 
 export default function Index() {
   const history = useHistory();
@@ -22,11 +22,11 @@ export default function Index() {
   return (
     <Switch>
       <RouteWithLayout exact component={HomePage} layout={MainLayout} path="/home"/>
-      <RouteWithLayout exact component={ParceiroPage} layout={MainLayout} path="/parceiros"/>
+      <RouteWithLayout exact component={ProfessionalPage} layout={MainLayout} path="/professionals"/>
       <RouteWithLayout exact component={ContactPage} layout={MainLayout} path="/contact"/>
       <RouteWithLayout exact component={LoginPage} layout={MainLayout} path="/login"/>
       <RouteWithLayout exact component={RegisterPage} layout={MainLayout} path="/register"/>
-      <RouteWithLayout exact component={ClientPage} layout={MainLayout} path="/client"/>
+      <RouteWithLayout exact component={CompaniePage} layout={MainLayout} path="/companies"/>
     </Switch>
   );
 }

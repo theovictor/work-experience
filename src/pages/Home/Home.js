@@ -192,7 +192,7 @@ export default function Home() {
           </div>
         </Container>
       </section>
-      <section class="my-5 pt-5">
+      <section className="my-5 pt-5">
         <Container>
           <Row>
             <Col md="6" className="m-auto">
@@ -204,11 +204,11 @@ export default function Home() {
               <Row>
                 <div className="col-8">
                   <div className="input-group">
-                    <input type="text" class="form-control mb-sm-0" placeholder="Email Aqui..."/>
+                    <input type="text" className="form-control mb-sm-0" placeholder="Email Aqui..."/>
                   </div>
                 </div>
                 <div className="col-4 ps-0">
-                  <Button type="button" class="btn bg-gradient-info mb-0 h-100 position-relative z-index-2">Inscreva-se</Button>
+                  <Button type="button" className="btn bg-gradient-info mb-0 h-100 position-relative z-index-2">Inscreva-se</Button>
                 </div>
               </Row>
             </Col>

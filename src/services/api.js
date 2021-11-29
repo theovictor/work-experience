@@ -1,5 +1,4 @@
-import axios from 'axios'
+const base_url = process.env.REACT_APP_API_BASEURL;
 
-export const api = axios.create({
-  baseURL: 'https://work-experience-api.herokuapp.com/v1'
-})
+export const professional = `${base_url}/professionals`
+export const companie = `${base_url}/companies`

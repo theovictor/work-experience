@@ -17,8 +17,8 @@ export function MainNavbar() {
             <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="m-auto">
                 <NavLink to="/home" className={isActive => `ml-2 ${styles.active}` + (!isActive ? "unselected" : '')}>Início</NavLink>
-                <NavLink to="/parceiros" className={isActive => styles.active + (!isActive ? "unselected" : '')}>Parceiros</NavLink>
-                <NavLink to="/client" className={isActive => styles.active + (!isActive ? "unselected" : '')}>Clientes</NavLink>
+                <NavLink to="/professionals" className={isActive => styles.active + (!isActive ? "unselected" : '')}>Profissionais</NavLink>
+                <NavLink to="/companies" className={isActive => styles.active + (!isActive ? "unselected" : '')}>Empresas</NavLink>
                 <NavLink to="/contact" className={isActive => styles.active + (!isActive ? "unselected" : '')}>Contato</NavLink>
               </Nav>
               <Nav>
