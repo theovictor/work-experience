@@ -3,13 +3,15 @@ import { Container, Row, Col, Button } from 'react-bootstrap';
 import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
 import styles from './styles.module.scss';
 
-export default function Header() {
+import officeimg from '../../assets/img/office-dark.jpg';
+
+export default function HomeHeader() {
   const history = useHistory();
 
   return (
     <>
       <header className="bg-gradient-dark">
-        <div className={`align-items-center d-flex p-0 ${styles.headerContent}`}>
+        <div className={`align-items-center d-flex p-0 ${styles.headerContent}`} style={{backgroundImage: `url(${officeimg})`}}>
           <span className={`bg-gradient-info ${styles.mask} ${styles['opacity-8']}`}/>
           <Container className={styles['header-container']}>
             <Row className="justify-content-center">
