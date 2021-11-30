@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useFormik } from 'formik';
 import { useProfessional } from '../../hooks/professional/useProfessional';
 import { Card, Col, Container, Form, Row, Button } from 'react-bootstrap';
