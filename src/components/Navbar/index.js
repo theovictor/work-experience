@@ -22,7 +22,8 @@ export function MainNavbar() {
                 <NavLink to="/contact" className={isActive => styles.active + (!isActive ? "unselected" : '')}>Contato</NavLink>
               </Nav>
               <Nav>
-                <Button className={`bg-white text-dark`} onClick={() => {history.push('/login')}}>Entrar</Button>
+                <Button className="bg-gradient-info text-white" onClick={() => {history.push('/professionals')}}>Inscreva-se</Button>
+                <div></div>
               </Nav>
             </Navbar.Collapse>
           </Container>

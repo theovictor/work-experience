@@ -27,27 +27,25 @@ export default function Footer() {
             <Col md="2" sm="6" className="mb-4">
             <h6 className={styles['text-gradient']}>Company</h6>
               <div className="d-flex flex-column">
-                <NavLink to="/home" className={isActive => `ml-2 ${styles.active}` + (!isActive ? "unselected" : '')}>Início</NavLink>
-                <NavLink to="/about" className={isActive => styles.active + (!isActive ? "unselected" : '')}>Sobre nós</NavLink>
-                <NavLink to="/contact" className={isActive => styles.active + (!isActive ? "unselected" : '')}>Contato</NavLink>
+              <NavLink to="/home" className={isActive => `ml-2 ${styles.active}` + (!isActive ? "unselected" : '')}>Início</NavLink>
+                <NavLink to="/professionals" className={isActive => styles.active + (!isActive ? "unselected" : '')}>Profissionais</NavLink>
+                <NavLink to="/companies" className={isActive => styles.active + (!isActive ? "unselected" : '')}>Empresas</NavLink>
               </div>
             </Col>
             <Col md="2" sm="6" className="mb-4">
             <h6 className={styles['text-gradient']}>Ajuda e Suporte</h6>
               <div className="d-flex flex-column">
-                <NavLink to="/home" className={isActive => `ml-2 ${styles.active}` + (!isActive ? "unselected" : '')}>Início</NavLink>
-                <NavLink to="/about" className={isActive => styles.active + (!isActive ? "unselected" : '')}>Sobre nós</NavLink>
                 <NavLink to="/contact" className={isActive => styles.active + (!isActive ? "unselected" : '')}>Contato</NavLink>
               </div>
             </Col>
-            <Col md="2" sm="6" className="mb-4">
-            <h6 className={styles['text-gradient']}>Legalidade</h6>
+            {/* <Col md="2" sm="6" className="mb-4">
+              <h6 className={styles['text-gradient']}>Legalidade</h6>
               <div className="d-flex flex-column">
                 <NavLink to="/home" className={isActive => `ml-2 ${styles.active}` + (!isActive ? "unselected" : '')}>Início</NavLink>
                 <NavLink to="/about" className={isActive => styles.active + (!isActive ? "unselected" : '')}>Sobre nós</NavLink>
                 <NavLink to="/contact" className={isActive => styles.active + (!isActive ? "unselected" : '')}>Contato</NavLink>
               </div>
-            </Col>
+            </Col> */}
             <Col md="12">
               <div className="text-center">
                 <p className="my-4 text-sm">

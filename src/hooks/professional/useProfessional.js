@@ -8,16 +8,14 @@ export function useProfessional() {
   const dispatch = useDispatch();
 
   const getTotalProfessinal = () => {
-    axios.get(`${professional}/total`, {
-    })
+    axios.get(`${professional}/total`)
     .then((res) => {
       dispatch(professinalActions.index_professinal(res.data));
     });
   }
 
   const postProfessinal = (values) => {
-    axios.post(professional, values, {
-    })
+    axios.post(professional, values)
     .then((res) => {
       getTotalProfessinal();
       toast.success('Cadastro realizado com sucesso!');

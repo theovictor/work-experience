@@ -19,8 +19,10 @@ export default function HomeHeader() {
                 <h1 className="text-white">Work Experience</h1>
                 <p className={`lead mb-4 text-white ${styles['opacity-8']}`}>
                   Especialista em recrutamento de Recursos Humanos
+                  <br/>
+                  Crie seu pré-cadastro clicando no botão logo abaixo!
                 </p>
-                <Button className={`${styles.btn} bg-white text-dark`} onClick={() => {history.push('/register')}}>Criar Conta</Button>
+                <Button className={`${styles.btn} bg-white text-dark`} onClick={() => {history.push('/professionals')}}>Criar Pré-Cadastro</Button>
                 <h6 className="text-white mb-2 mt-5">Encontre-nos em</h6>
                 <div className="d-flex justify-content-center">
                   <a href="home"><i className="text-lg text-white me-4"><FaFacebook/></i></a>

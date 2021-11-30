@@ -1,22 +1,31 @@
-import { Card, Col, Container, Row, Button, Form } from 'react-bootstrap';
 import { useFormik } from 'formik';
+import { useContact } from '../../hooks/contact/useContact';
+import { Card, Col, Container, Row, Button, Form } from 'react-bootstrap';
 
 import styles from './styles.module.scss';
 import imgCurved from '../../assets/img/curved8.jpg';
 
 export default function Contact() {
-  
+  const contact = useContact();
+
   const formik = useFormik({
     initialValues: {
-      nome: '',
+      name: '',
       email: '',
-      mensagem: '',
+      message: '',
     },
   });
   
+  const limpar = () => {
+    formik.setFieldValue('name', '');
+    formik.setFieldValue('email', '');
+    formik.setFieldValue('message', '');
+  }
+
   const sendMsg = (e) => {
     e.preventDefault();
-    // console.log(formik.values)
+    contact.postContact(formik.values);
+    limpar();
   }
 
   return (
@@ -40,7 +49,7 @@ export default function Contact() {
                       <Col>
                         <Form.Group className="mb-3 text-start" controlId="formBasicEmail">
                           <Form.Label>Nome Completo</Form.Label>
-                          <Form.Control type="text" placeholder="Nome Completo" {...formik.getFieldProps('nome')} required/>
+                          <Form.Control type="text" placeholder="Nome Completo" {...formik.getFieldProps('name')} required/>
                         </Form.Group>
                       </Col>
                       <Col>
@@ -52,7 +61,7 @@ export default function Contact() {
                     </Row>
                     <Form.Group className="mb-3 text-start" controlId="formBasicPassword">
                       <Form.Label>Mensagem</Form.Label>
-                      <Form.Control as="textarea" placeholder="Descreva sua mensagem em pelo menos 250 caracteres." rows="7" {...formik.getFieldProps('mensagem')} required/>
+                      <Form.Control as="textarea" placeholder="Descreva sua mensagem em pelo menos 250 caracteres." rows="7" {...formik.getFieldProps('message')} required/>
                     </Form.Group>
                     <Button type="submit">Enviar Mensagem</Button>
                   </Form>

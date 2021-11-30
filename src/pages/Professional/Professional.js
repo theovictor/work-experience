@@ -61,7 +61,7 @@ export default function Professional() {
                 <div>
                   <div className={`text-center`}>
                   </div>
-                  <h5>Faça seu pre-cadastro.</h5>
+                  <h5>Faça seu pré-cadastro.</h5>
                   <p>é muito simples e fácil.</p>
                 </div>
               </Col>

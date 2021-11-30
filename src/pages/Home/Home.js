@@ -1,3 +1,4 @@
+import { useHistory } from 'react-router';
 import { Card, Col, Container, Row, Button } from 'react-bootstrap';
 import HomeHeader from '../../components/Headers/HomeHeader';
 import styles from './styles.module.scss';
@@ -11,8 +12,10 @@ import waveUp from '../../assets/img/wave-up.svg';
 import kalVisual from '../../assets/img/kal-visuals-square.jpg'
 import people from '../../assets/img/people.jpg';
 import illustrate from '../../assets/img/illustration/sign-up.png';
+import theo from '../../assets/img/theo.jpg';
 
 export default function Home() {
+  const history = useHistory();
 
 
   return (
@@ -96,14 +99,14 @@ export default function Home() {
                 <Row>
                   <Col lg="4" md="6" className="pe-lg-0">
                     <div className="p-3 pe-md-0">
-                      <img className="w-100 rounded-circle shadow" src={kalVisual} alt="" />
+                      <img className="w-100 rounded-circle shadow" src={theo} alt="" />
                     </div>
                   </Col>
                   <Col lg="8" md="6" className="ps-lg-0 my-auto">
                     <Card.Body>
-                      <h5 className="mb-0">Emma Roberts</h5>
-                      <h6 className="text-info">UI Designer</h6>
-                      <p className="mb-0">Artist is a term applied to a person who engages in an activity deemed to be an art.</p>
+                      <h5 className="mb-0">Theo Victor</h5>
+                      <h6 className="text-info">Software Developer</h6>
+                      <a href="https://github.com/tzn-dev" className={styles.Link}>github.com/tzn-dev</a>
                     </Card.Body>
                   </Col>
                 </Row>
@@ -173,23 +176,23 @@ export default function Home() {
       </section>
       <section className="pt-2 pb-6 bg-gray-100" id="count-stats">
         <Container>
-          <div className="row justify-content-center text-center">
-            <div className="col-md-3">
-              <h1 className="text-gradient text-info" id="state1" countTo="5234">5234</h1>
+          <Row className="justify-content-center text-center">
+            <Col md="3">
+              <h1 className="text-gradient text-info" id="state1">5234</h1>
               <h5>Contratos</h5>
               <p>Clientes que foram efetivados no mercado de trabalho</p>
-            </div>
-            <div className="col-md-3">
-              <h1 className="text-gradient text-info"><span id="state2" countTo="3400">3400</span>+</h1>
+            </Col>
+            <Col md="3">
+              <h1 className="text-gradient text-info"><span id="state2">3400</span>+</h1>
               <h5>Cursos</h5>
               <p>São cursos e novos lançamentos toda semana</p>
-            </div>
-            <div className="col-md-3">
-              <h1 className="text-gradient text-info"><span id="state3" countTo="24">24</span>/7</h1>
+            </Col>
+            <Col md="3">
+              <h1 className="text-gradient text-info"><span id="state3">24</span>/7</h1>
               <h5>Suporte</h5>
               <p>Nosso time está disposição á qualquer hora</p>
-            </div>
-          </div>
+            </Col>
+          </Row>
         </Container>
       </section>
       <section className="my-5 pt-5">
@@ -202,13 +205,8 @@ export default function Home() {
                 Porém, com nossa ajuda e seu esforço alcançaremos as alturas.
               </p>
               <Row>
-                <div className="col-8">
-                  <div className="input-group">
-                    <input type="text" className="form-control mb-sm-0" placeholder="Email Aqui..."/>
-                  </div>
-                </div>
                 <div className="col-4 ps-0">
-                  <Button type="button" className="btn bg-gradient-info mb-0 h-100 position-relative z-index-2">Inscreva-se</Button>
+                  <Button className="bg-gradient-info mb-0 h-100 position-relative z-index-2 border-0" onClick={() => {history.push('/professionals')}}>Inscreva-se</Button>
                 </div>
               </Row>
             </Col>

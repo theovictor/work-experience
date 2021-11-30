@@ -1,8 +1,15 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useFormik } from 'formik';
+import { useCompanie } from '../../hooks/companie/useCompanie';
+import { useSelector } from 'react-redux';
 import { Card, Col, Container, Form, Row, Button } from 'react-bootstrap';
 import CompanieHeader from '../../components/Headers/CompanieHeader';
+import { useEffect } from 'react';
 
 export default function Companie() {
+  const companie = useCompanie();
+  const rd_companie = useSelector((state) => state.companieReducer);
+
   const formik = useFormik({
     initialValues: {
       name: '',
@@ -11,9 +18,26 @@ export default function Companie() {
     },
   });
 
+  const limpar = () => {
+    // formik.values.name = '';
+    // formik.values.email = '';
+    // formik.values.previous_description = '';
+    formik.setFieldValue('name', '');
+    formik.setFieldValue('email', '');
+    formik.setFieldValue('previous_description', '');
+  }
+
   const addCompanie = (e) => {
     e.preventDefault();
+    companie.postMsgCompanie(formik.values);
+    limpar();
   }
+
+  useEffect(() => {
+    if (!rd_companie.index) {
+      companie.getAllMsgCompanie();
+    }
+  }, [rd_companie.index])
 
   return (
     <>
@@ -26,8 +50,18 @@ export default function Companie() {
                 <div>
                   <div className={`text-center`}>
                   </div>
-                  <h5>Envie-nos sua Mensagem.</h5>
+                  <h4>Envie-nos sua Mensagem.</h4>
                   <p>é muito simples e fácil.</p>
+                </div>
+              </Col>
+            </Row>
+            <Row className="mt-4 justify-content-center">
+              <Col md="6">
+                <div>
+                  <div className={`text-center`}>
+                  </div>
+                  <h5>Total de mensagems recebidas até o momento.</h5>
+                  <h1 className="text-gradient text-info">{rd_companie?.index? rd_companie.index?.total : '0' }</h1>
                 </div>
               </Col>
             </Row>
@@ -43,11 +77,11 @@ export default function Companie() {
                       </Form.Group>
                       <Form.Group className="mb-3 text-start" controlId="formBasicEmail">
                         <Form.Label>Email da Empresa</Form.Label>
-                        <Form.Control type="email" {...formik.getFieldProps('email')} required/>
+                        <Form.Control type="email" placeholder="workexperience@gmail.com" {...formik.getFieldProps('email')} required/>
                       </Form.Group>
                       <Form.Group className="mb-2 text-start" controlId="formBasicEmail">
-                        <Form.Label>Aréa de Atuação</Form.Label>
-                        <Form.Control as="textarea" {...formik.getFieldProps('previous_description')} rows="5" required/>
+                        <Form.Label>Mensagem</Form.Label>
+                        <Form.Control as="textarea" placeholder="Descreva sua mensagem." {...formik.getFieldProps('previous_description')} rows="5" required/>
                       </Form.Group>
                   </Row>
                   <div className="d-grid gap-2">

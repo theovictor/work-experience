@@ -19,7 +19,7 @@ export default function ProfessinalHeader() {
                 <h6 className="text-white mb-2 mt-5">Em busca da sua primeira oportunidade de emprego?</h6>
                 <div className="d-flex justify-content-center">
                   <p className={`lead mb-4 text-white ${styles['opacity-8']}`}>
-                    Faça seu pre-cadastro!
+                    Faça seu pré-cadastro!
                   </p>
                 </div>
               </Col>
