@@ -4,6 +4,7 @@ import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
 import styles from './styles.module.scss';
 
 import officeimg from '../../assets/img/office-dark.jpg';
+import logo from '../../assets/img/logo.png';
 
 export default function HomeHeader() {
   const history = useHistory();
@@ -16,7 +17,8 @@ export default function HomeHeader() {
           <Container className={styles['header-container']}>
             <Row className="justify-content-center">
               <Col className="text-center mx-auto my-auto" lg="8">
-                <h1 className="text-white">Work Experience</h1>
+                {/* <h1 className="text-white">Work Experience</h1> */}
+                <img src={logo} alt="logo"/>
                 <p className={`lead mb-4 text-white ${styles['opacity-8']}`}>
                   Especialista em recrutamento de Recursos Humanos
                   <br/>
