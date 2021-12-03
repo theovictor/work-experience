@@ -9,7 +9,6 @@ import box3D from '../../assets/img/box-3d.svg';
 import customerSuport from '../../assets/img/customer-suport.svg';
 import waveDown from '../../assets/img/wave-down.svg';
 import waveUp from '../../assets/img/wave-up.svg';
-import kalVisual from '../../assets/img/kal-visuals-square.jpg'
 import people from '../../assets/img/people.jpg';
 import illustrate from '../../assets/img/illustration/sign-up.png';
 import theo from '../../assets/img/theo.jpg';
