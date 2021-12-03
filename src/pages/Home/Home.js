@@ -13,6 +13,7 @@ import kalVisual from '../../assets/img/kal-visuals-square.jpg'
 import people from '../../assets/img/people.jpg';
 import illustrate from '../../assets/img/illustration/sign-up.png';
 import theo from '../../assets/img/theo.jpg';
+import Henrique from '../../assets/img/Henrique.jpg';
 
 export default function Home() {
   const history = useHistory();
@@ -117,14 +118,14 @@ export default function Home() {
                 <Row>
                   <Col lg="4" md="6" className="pe-lg-0">
                     <div className="p-3 pe-md-0">
-                      <img className="w-100 rounded-circle shadow" src={kalVisual} alt="" />
+                      <img className="w-100 rounded-circle shadow" src={Henrique} alt="" />
                     </div>
                   </Col>
                   <Col lg="8" md="6" className="ps-lg-0 my-auto">
                     <Card.Body>
-                      <h5 className="mb-0">Emma Roberts</h5>
-                      <h6 className="text-info">UI Designer</h6>
-                      <p className="mb-0">Artist is a term applied to a person who engages in an activity deemed to be an art.</p>
+                      <h5 className="mb-0">Henrique Anjos</h5>
+                      <h6 className="text-info">Software Developer</h6>
+                      <a href="https://github.com/Licaesar" className={styles.Link}>github.com/Licaesar</a>
                     </Card.Body>
                   </Col>
                 </Row>
